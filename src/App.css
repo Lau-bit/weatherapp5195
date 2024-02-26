@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(29, 42, 53);
+}
+
+.WeatherDisplayer{
+  margin-top: 12px;
+  display: block;
+  background-color: #49a9c6;
+  border-radius: 8px;
+  padding: 12px
+}
+
+.DataSection{
+  display: block;
+  background-color: gainsboro;
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+}
+
+input{
+  padding: 8px;
+}
+
+#Search{
+  display: flex;
+  align-items: center;
+}
+
+#SearchGrid{
+  position: relative;
+}
+
+#SearchBox{
+  width: 200px;
+}
+
+button{
+  padding: 8px;
+}
+
+ul{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+button {
+  margin-left: 10px;
+}
+
+select{
+  padding: 8px;
+  margin-left: 10px;
+}
+
+#CurrentCondition{
+  display: flex;
+  margin-bottom: -25px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 175px;
 }
 
-.App-link {
-  color: #61dafb;
+#Weather{
+  margin-left: 100px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DataSectionSmall{
+  display: block;
+  background-color: gainsboro;
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+  width: 500px;
 }
